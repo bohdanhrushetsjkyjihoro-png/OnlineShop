@@ -28,6 +28,13 @@
           запчастин.
         </p>
 
+        <img
+          src="images/car-accessories.jpg"
+          alt="Автомобільні аксесуари та запчастини"
+          width="600"
+          height="400"
+        />
+
         <aside>
           <h3>Спеціальна пропозиція</h3>
           <p>Обирайте необхідні товари для вашого автомобіля.</p>
@@ -84,8 +91,45 @@
 
       <section id="contacts">
         <h2>Контакти</h2>
-        <p>Email: autoshop@example.com</p>
-        <p>Телефон: +380 00 000 00 00</p>
+        <p>Якщо у вас виникли запитання, заповніть форму.</p>
+
+        <form action="#" method="post">
+          <p>
+            <label for="name">Ім'я:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введіть ваше ім'я"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="message">Повідомлення:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              cols="40"
+              placeholder="Введіть ваше повідомлення"
+              required
+            ></textarea>
+          </p>
+
+          <button type="submit">Відправити</button>
+        </form>
       </section>
 
       <section id="cart">
