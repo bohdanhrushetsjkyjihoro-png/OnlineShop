@@ -3,83 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoShop</title>
-    <style>
-      :root {
-        --bg-dark: #0b1220;
-        --panel: rgba(17, 24, 39, 0.8);
-        --line: rgba(148, 163, 184, 0.25);
-        --text: #e2e8f0;
-        --muted: #94a3b8;
-        --accent: #f59e0b;
-        --accent-strong: #ef4444;
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background:
-          radial-gradient(circle at top, rgba(245, 158, 11, 0.18), transparent 25%),
-          linear-gradient(135deg, var(--bg-dark), #111827 45%, #020617);
-        color: var(--text);
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .card {
-        width: min(90vw, 720px);
-        padding: clamp(2rem, 5vw, 4rem);
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        background: var(--panel);
-        backdrop-filter: blur(14px);
-        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
-        text-align: center;
-      }
-
-      .brand {
-        display: inline-block;
-        padding: 0.55rem 0.9rem;
-        border: 1px solid rgba(245, 158, 11, 0.5);
-        border-radius: 999px;
-        letter-spacing: 0.22rem;
-        text-transform: uppercase;
-        font-size: 0.72rem;
-        color: var(--accent);
-        background: rgba(245, 158, 11, 0.06);
-      }
-
-      h1 {
-        margin: 1.5rem 0 0.85rem;
-        font-size: clamp(2.4rem, 7vw, 5rem);
-        line-height: 1.05;
-        letter-spacing: -0.04em;
-      }
-
-      p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1.05rem;
-      }
-
-      .underline {
-        width: 120px;
-        height: 4px;
-        margin: 1.75rem auto 0;
-        border-radius: 999px;
-        background: linear-gradient(90deg, var(--accent), var(--accent-strong));
-      }
-    </style>
+    <title>AutoShop — автомобільні товари</title>
   </head>
   <body>
-    <main class="card" aria-labelledby="coming-soon-title">
-      <div class="brand">AutoShop</div>
-      <h1 id="coming-soon-title">Coming soon</h1>
-      <p>We are preparing an exceptional automotive marketplace for your next purchase.</p>
-      <div class="underline" aria-hidden="true"></div>
+    <header>
+      <h1>AutoShop</h1>
+      <p>Інтернет-магазин автомобільних товарів</p>
+
+      <nav>
+        <a href="#home">Головна</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">Про нас</a>
+        <a href="#services">Послуги</a>
+        <a href="#contacts">Контакти</a>
+        <a href="#cart">Кошик</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Головна</h2>
+        <p>
+          Ласкаво просимо до AutoShop — онлайн-магазину автомобільних товарів і
+          запчастин.
+        </p>
+
+        <img
+          src="images/car-accessories.jpg"
+          alt="Автомобільні аксесуари та запчастини"
+          width="600"
+          height="400"
+        />
+
+        <aside>
+          <h3>Спеціальна пропозиція</h3>
+          <p>Обирайте необхідні товари для вашого автомобіля.</p>
+        </aside>
+      </section>
+
+      <section id="catalog">
+        <h2>Каталог</h2>
+
+        <article>
+          <h3>Автомобільні запчастини</h3>
+          <p>
+            Гальмівні колодки, фільтри, свічки запалювання та інші запчастини.
+          </p>
+        </article>
+
+        <article>
+          <h3>Автомобільні аксесуари</h3>
+          <p>
+            Килимки, тримачі для телефону, зарядні пристрої та інші корисні
+            аксесуари.
+          </p>
+        </article>
+
+        <article>
+          <h3>Автомобільна косметика</h3>
+          <p>
+            Засоби для догляду за кузовом, салоном та склом автомобіля.
+          </p>
+        </article>
+      </section>
+
+      <section id="about">
+        <h2>Про нас</h2>
+        <p>
+          AutoShop — вигаданий інтернет-магазин автомобільних товарів,
+          створений для навчального проєкту.
+        </p>
+      </section>
+
+      <section id="services">
+        <h2>Послуги</h2>
+
+        <article>
+          <h3>Доставка</h3>
+          <p>Доставка замовлень по Україні.</p>
+        </article>
+
+        <article>
+          <h3>Консультація</h3>
+          <p>Допомога у виборі автомобільних товарів.</p>
+        </article>
+      </section>
+
+      <section id="contacts">
+        <h2>Контакти</h2>
+        <p>Якщо у вас виникли запитання, заповніть форму.</p>
+
+        <form action="#" method="post">
+          <p>
+            <label for="name">Ім'я:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введіть ваше ім'я"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="message">Повідомлення:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              cols="40"
+              placeholder="Введіть ваше повідомлення"
+              required
+            ></textarea>
+          </p>
+
+          <button type="submit">Відправити</button>
+        </form>
+      </section>
+
+      <section id="cart">
+        <h2>Кошик</h2>
+        <p>
+          Тут будуть відображатися товари, які користувач додав до кошика.
+        </p>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 AutoShop. Навчальний проєкт.</p>
+      <p>Email: autoshop@example.com</p>
+    </footer>
   </body>
 </html>
