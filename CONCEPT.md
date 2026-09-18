@@ -58,8 +58,8 @@ AutoShop — це онлайн-магазин автомобільних тов�
 
 Для створення структури та дизайну були розглянуті такі сайти:
 
-- RockAuto — https://www.rockauto.com/
-- Euro Car Parts — https://www.eurocarparts.com/
+- DOK.UA — https://https://dok.ua
+- EXIST.UA — https://exist.ua
 - AUTODOC — https://www.autodoc.eu/
 
 Референси використовуються для аналізу структури каталогу, категорій товарів та навігації інтернет-магазину.
