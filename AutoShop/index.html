@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AutoShop — автомобільні запчастини, аксесуари та товари для догляду за авто."
+    />
+    <title>AutoShop — автомобільні товари</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">AutoShop</a>
+      <nav aria-label="Головна навігація">
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+          <li><a href="#cart">Кошик</a></li>
+        </ul>
+      </nav>
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Увімкнути темну тему"
+      >
+        Темна тема
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Все для вашого автомобіля</p>
+          <h1>Підготуй авто до кожної поїздки</h1>
+          <p>
+            Запчастини, аксесуари та засоби догляду — зібрали потрібне для вашого
+            автомобіля в одному місці.
+          </p>
+          <a class="button" href="#catalog">Переглянути каталог</a>
+        </div>
+        <div class="hero-art" role="img" aria-label="Ілюстрація автомобільного колеса">
+          <span class="hero-art-label">AutoShop / 2026</span>
+          <span class="wheel" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section id="catalog">
+        <p class="eyebrow">Знайдіть потрібне</p>
+        <h2>Каталог товарів</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-number" aria-hidden="true">01</span>
+            <h3>Запчастини</h3>
+            <p>Гальмівні колодки, фільтри, свічки запалювання та інші деталі.</p>
+            <a href="#contacts">Допомогти з вибором</a>
+          </article>
+          <article class="card">
+            <span class="card-number" aria-hidden="true">02</span>
+            <h3>Аксесуари</h3>
+            <p>Килимки, тримачі для телефону, зарядні пристрої та корисні дрібниці.</p>
+            <a href="#contacts">Допомогти з вибором</a>
+          </article>
+          <article class="card">
+            <span class="card-number" aria-hidden="true">03</span>
+            <h3>Догляд за авто</h3>
+            <p>Засоби для кузова, салону та скла, щоб автомобіль залишався охайним.</p>
+            <a href="#contacts">Допомогти з вибором</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div>
+          <p class="eyebrow">Про AutoShop</p>
+          <h2>Практичні рішення для щоденних поїздок</h2>
+        </div>
+        <p>
+          AutoShop — навчальний проєкт онлайн-магазину автомобільних товарів.
+          Ми прагнемо зробити пошук потрібних речей зрозумілим і зручним.
+        </p>
+      </section>
+
+      <section id="services">
+        <p class="eyebrow">Підтримка на кожному кроці</p>
+        <h2>Наші послуги</h2>
+        <div class="cards service-cards">
+          <article class="card">
+            <h3>Доставка</h3>
+            <p>Доставка замовлень по Україні.</p>
+          </article>
+          <article class="card">
+            <h3>Консультація</h3>
+            <p>Допоможемо зорієнтуватися в категоріях та обрати товар.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacts" class="contact-section">
+        <div>
+          <p class="eyebrow">Маєте запитання?</p>
+          <h2>Зв'яжіться з нами</h2>
+          <p>Напишіть нам — допоможемо зорієнтуватися з вибором.</p>
+          <p><a href="mailto:autoshop@example.com">autoshop@example.com</a></p>
+        </div>
+        <form action="#" method="post">
+          <label for="contact-name">Ім'я</label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Ваше ім'я"
+            required
+          />
+
+          <label for="contact-email">Email</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="name@example.com"
+            required
+          />
+
+          <label for="contact-message">Повідомлення</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            placeholder="Чим можемо допомогти?"
+            required
+          ></textarea>
+
+          <button class="button" type="submit">Надіслати</button>
+        </form>
+      </section>
+
+      <section id="cart" class="cart-section">
+        <div>
+          <p class="eyebrow">Ваш вибір</p>
+          <h2>Кошик</h2>
+        </div>
+        <p>Тут з'являться товари, які ви додасте до кошика.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="#home">AutoShop</a>
+      <p>&copy; 2026 AutoShop. Навчальний проєкт.</p>
+      <a href="mailto:autoshop@example.com">autoshop@example.com</a>
+    </footer>
+
+    <script>
+      const themeToggle = document.querySelector("#theme-toggle");
+
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.toggle("dark-theme");
+        themeToggle.setAttribute("aria-pressed", String(isDark));
+        themeToggle.setAttribute(
+          "aria-label",
+          isDark ? "Увімкнути світлу тему" : "Увімкнути темну тему",
+        );
+        themeToggle.textContent = isDark ? "Світла тема" : "Темна тема";
+      });
+    </script>
+  </body>
+</html>
