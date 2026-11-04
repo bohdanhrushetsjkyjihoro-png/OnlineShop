@@ -4,36 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoShop — автомобільні товари</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>AutoShop</h1>
-      <p>Інтернет-магазин автомобільних товарів</p>
-
+    <header class="site-header">
       <nav>
-        <a href="#home">Головна</a>
-        <a href="#catalog">Каталог</a>
-        <a href="#about">Про нас</a>
-        <a href="#services">Послуги</a>
-        <a href="#contacts">Контакти</a>
-        <a href="#cart">Кошик</a>
+        <a class="logo" href="#home">AutoShop</a>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+          <li><a href="#cart">Кошик</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <section id="home">
-        <h2>Головна</h2>
-        <p>
-          Ласкаво просимо до AutoShop — онлайн-магазину автомобільних товарів і
-          запчастин.
-        </p>
+        <div class="hero">
+          <div>
+            <h1>Інтернет-магазин автомобільних товарів</h1>
+            <p>
+              Ласкаво просимо до AutoShop — онлайн-магазину автомобільних
+              товарів і запчастин.
+            </p>
+            <a class="button" href="#catalog">Переглянути каталог</a>
+          </div>
 
-        <img
-          src="images/car-accessories.jpg"
-          alt="Автомобільні аксесуари та запчастини"
-          width="600"
-          height="400"
-        />
+          <img
+            src="images/car-accessories.jpg"
+            alt="Автомобільні аксесуари та запчастини"
+            width="600"
+            height="400"
+          />
+        </div>
 
         <aside>
           <h3>Спеціальна пропозиція</h3>
@@ -44,27 +50,29 @@
       <section id="catalog">
         <h2>Каталог</h2>
 
-        <article>
-          <h3>Автомобільні запчастини</h3>
-          <p>
-            Гальмівні колодки, фільтри, свічки запалювання та інші запчастини.
-          </p>
-        </article>
+        <div class="cards">
+          <article>
+            <h3>Автомобільні запчастини</h3>
+            <p>
+              Гальмівні колодки, фільтри, свічки запалювання та інші запчастини.
+            </p>
+          </article>
 
-        <article>
-          <h3>Автомобільні аксесуари</h3>
-          <p>
-            Килимки, тримачі для телефону, зарядні пристрої та інші корисні
-            аксесуари.
-          </p>
-        </article>
+          <article>
+            <h3>Автомобільні аксесуари</h3>
+            <p>
+              Килимки, тримачі для телефону, зарядні пристрої та інші корисні
+              аксесуари.
+            </p>
+          </article>
 
-        <article>
-          <h3>Автомобільна косметика</h3>
-          <p>
-            Засоби для догляду за кузовом, салоном та склом автомобіля.
-          </p>
-        </article>
+          <article>
+            <h3>Автомобільна косметика</h3>
+            <p>
+              Засоби для догляду за кузовом, салоном та склом автомобіля.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="about">
@@ -78,15 +86,17 @@
       <section id="services">
         <h2>Послуги</h2>
 
-        <article>
-          <h3>Доставка</h3>
-          <p>Доставка замовлень по Україні.</p>
-        </article>
+        <div class="cards">
+          <article>
+            <h3>Доставка</h3>
+            <p>Доставка замовлень по Україні.</p>
+          </article>
 
-        <article>
-          <h3>Консультація</h3>
-          <p>Допомога у виборі автомобільних товарів.</p>
-        </article>
+          <article>
+            <h3>Консультація</h3>
+            <p>Допомога у виборі автомобільних товарів.</p>
+          </article>
+        </div>
       </section>
 
       <section id="contacts">
@@ -128,7 +138,7 @@
             ></textarea>
           </p>
 
-          <button type="submit">Відправити</button>
+          <button class="button" type="submit">Відправити</button>
         </form>
       </section>
 
@@ -140,7 +150,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>&copy; 2026 AutoShop. Навчальний проєкт.</p>
       <p>Email: autoshop@example.com</p>
     </footer>
