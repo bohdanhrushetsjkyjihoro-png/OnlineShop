@@ -3,156 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoShop — автомобільні товари</title>
+    <meta name="description" content="Мій навчальний вебсайт" />
+    <title>Мій вебсайт</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav>
-        <a class="logo" href="#home">AutoShop</a>
-        <ul>
-          <li><a href="#home">Головна</a></li>
-          <li><a href="#catalog">Каталог</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#contacts">Контакти</a></li>
-          <li><a href="#cart">Кошик</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page-layout">
+      <header class="header">
+        <h1>Мій вебсайт</h1>
+        <nav>
+          <a href="#home">Головна</a>
+          <a href="#projects">Проєкти</a>
+          <a href="#about">Про мене</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+      </header>
 
-    <main>
-      <section id="home">
-        <div class="hero">
-          <div>
-            <h1>Інтернет-магазин автомобільних товарів</h1>
-            <p>
-              Ласкаво просимо до AutoShop — онлайн-магазину автомобільних
-              товарів і запчастин.
-            </p>
-            <a class="button" href="#catalog">Переглянути каталог</a>
-          </div>
+      <aside class="sidebar">
+        <h2>Меню</h2>
+        <p>Ласкаво прошу на мій сайт!</p>
+      </aside>
 
-          <img
-            src="images/car-accessories.jpg"
-            alt="Автомобільні аксесуари та запчастини"
-            width="600"
-            height="400"
-          />
-        </div>
-
-        <aside>
-          <h3>Спеціальна пропозиція</h3>
-          <p>Обирайте необхідні товари для вашого автомобіля.</p>
-        </aside>
-      </section>
-
-      <section id="catalog">
-        <h2>Каталог</h2>
-
-        <div class="cards">
-          <article>
-            <h3>Автомобільні запчастини</h3>
-            <p>
-              Гальмівні колодки, фільтри, свічки запалювання та інші запчастини.
-            </p>
-          </article>
-
-          <article>
-            <h3>Автомобільні аксесуари</h3>
-            <p>
-              Килимки, тримачі для телефону, зарядні пристрої та інші корисні
-              аксесуари.
-            </p>
-          </article>
-
-          <article>
-            <h3>Автомобільна косметика</h3>
-            <p>
-              Засоби для догляду за кузовом, салоном та склом автомобіля.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="about">
-        <h2>Про нас</h2>
-        <p>
-          AutoShop — вигаданий інтернет-магазин автомобільних товарів,
-          створений для навчального проєкту.
-        </p>
-      </section>
-
-      <section id="services">
-        <h2>Послуги</h2>
-
-        <div class="cards">
-          <article>
-            <h3>Доставка</h3>
-            <p>Доставка замовлень по Україні.</p>
-          </article>
-
-          <article>
-            <h3>Консультація</h3>
-            <p>Допомога у виборі автомобільних товарів.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contacts">
-        <h2>Контакти</h2>
-        <p>Якщо у вас виникли запитання, заповніть форму.</p>
-
-        <form action="#" method="post">
+      <main class="main" id="home">
+        <section class="intro">
+          <h2>Вітаю на моєму сайті!</h2>
           <p>
-            <label for="name">Ім'я:</label><br />
+            Це навчальний проєкт для демонстрації CSS Grid, Flexbox та
+            адаптивної верстки.
+          </p>
+        </section>
+
+        <section class="projects" id="projects">
+          <h2>Мої проєкти</h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>HTML</h3>
+              <p>Створення структури вебсторінок.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>CSS Grid</h3>
+              <p>Створення сіток та макетів сайту.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>Flexbox</h3>
+              <p>Гнучке розташування елементів.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <h2>Про мене</h2>
+          <p>Я вивчаю HTML, CSS та сучасні технології веброзробки.</p>
+        </section>
+
+        <section class="contacts" id="contacts">
+          <h2>Контакти</h2>
+
+          <form>
             <input
               type="text"
-              id="name"
               name="name"
-              placeholder="Введіть ваше ім'я"
+              aria-label="Ваше ім'я"
+              placeholder="Ваше ім'я"
               required
             />
-          </p>
-
-          <p>
-            <label for="email">Email:</label><br />
             <input
               type="email"
-              id="email"
               name="email"
-              placeholder="example@email.com"
+              aria-label="Ваш Email"
+              placeholder="Ваш Email"
               required
             />
-          </p>
-
-          <p>
-            <label for="message">Повідомлення:</label><br />
             <textarea
-              id="message"
               name="message"
-              rows="6"
-              cols="40"
-              placeholder="Введіть ваше повідомлення"
+              aria-label="Ваше повідомлення"
+              placeholder="Ваше повідомлення"
               required
             ></textarea>
-          </p>
+            <button type="submit">Надіслати</button>
+          </form>
+        </section>
+      </main>
 
-          <button class="button" type="submit">Відправити</button>
-        </form>
-      </section>
-
-      <section id="cart">
-        <h2>Кошик</h2>
-        <p>
-          Тут будуть відображатися товари, які користувач додав до кошика.
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 AutoShop. Навчальний проєкт.</p>
-      <p>Email: autoshop@example.com</p>
-    </footer>
+      <footer class="footer">
+        <p>&copy; 2026 Мій вебсайт. Усі права захищені.</p>
+      </footer>
+    </div>
   </body>
 </html>
