@@ -1,0 +1,18 @@
+{
+  "name": "OnlineShop — Магазин цифрової техніки",
+  "short_name": "OnlineShop",
+  "description": "Сучасний інтернет-магазин гаджетів та техніки",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#184269",
+  "icons": [
+    {
+      "src": "./images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

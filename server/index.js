@@ -7,6 +7,18 @@ const PORT = Number(process.env.PORT) || 3000;
 app.use(cors());
 app.use(express.json({ limit: "10kb" }));
 
+app.get("/", (_request, response) => {
+  response.send("OnlineShop API is running");
+});
+
+app.get("/api", (_request, response) => {
+  response.json({
+    status: "success",
+    message: "OnlineShop API is running",
+    endpoints: ["/api/projects", "/api/contact"],
+  });
+});
+
 const projects = [
   {
     id: 1,
@@ -59,7 +71,10 @@ app.post("/api/contact", (request, response) => {
   }
 
   console.log("Отримано нове повідомлення з контактної форми.");
-  response.status(201).json({ ok: true });
+  response.status(201).json({
+    ok: true,
+    message: "Повідомлення успішно отримано сервером",
+  });
 });
 
 app.use((error, _request, response, _next) => {

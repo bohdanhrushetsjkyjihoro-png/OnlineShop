@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#184269" />
     <meta
       name="description"
-      content="OnlineShop — магазин цифрової техніки з гарантією якості та швидкою доставкою."
+      content="Офіційний інтернет-магазин OnlineShop. Великий вибір смартфонів, ноутбуків та аксесуарів із гарантією та доставкою по Україні."
     />
-    <title>OnlineShop — магазин цифрової техніки</title>
+    <title>OnlineShop — магазин сучасної цифрової техніки та гаджетів</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/icon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="canonical"
+      href="https://bohdanhrushetsjkyjihoro-png.github.io/OnlineShop/"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="OnlineShop — Сучасна техніка для вашого комфорту"
+    />
+    <meta
+      property="og:description"
+      content="Широкий асортимент гаджетів за найкращими цінами. Купуйте техніку з офіційною гарантією."
+    />
+    <meta
+      property="og:url"
+      content="https://bohdanhrushetsjkyjihoro-png.github.io/OnlineShop/"
+    />
+    <meta property="og:locale" content="uk_UA" />
     <link
       rel="preload"
       as="image"
@@ -17,16 +42,26 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
-  <body class="bg-gray-50 font-sans text-gray-800 antialiased">
+  <body class="bg-gray-50 font-sans text-brand-dark antialiased">
+    <a
+      href="#main-content"
+      class="sr-only rounded-lg bg-white px-4 py-3 text-brand-primary shadow-lg focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50"
+    >
+      Перейти до основного контенту
+    </a>
     <header class="sticky top-0 z-50 border-b border-gray-200 bg-white">
       <div
         class="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
       >
-        <a href="#hero" class="text-2xl font-bold text-brand-primary">
+        <a
+          href="#hero"
+          class="text-2xl font-bold text-brand-primary"
+          aria-label="OnlineShop — головна сторінка"
+        >
           OnlineShop
         </a>
 
-        <nav class="hidden space-x-8 md:flex" aria-label="Головна навігація">
+        <nav class="hidden space-x-8 md:flex" aria-label="Головне меню">
           <a
             href="#hero"
             class="font-medium text-brand-primary"
@@ -77,13 +112,18 @@
       </div>
     </header>
 
-    <main>
-      <section id="hero" class="bg-gray-100 py-12 md:py-20">
+    <main id="main-content">
+      <section
+        id="hero"
+        class="bg-gray-100 py-12 md:py-20"
+        aria-labelledby="hero-title"
+      >
         <div
           class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8"
         >
           <div>
             <h1
+              id="hero-title"
               class="mb-4 text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl"
             >
               Сучасна техніка для вашого комфорту
@@ -120,9 +160,16 @@
         </div>
       </section>
 
-      <section id="products" class="py-16">
+      <section
+        id="products"
+        class="py-16"
+        aria-labelledby="products-title"
+      >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="mb-10 text-center text-3xl font-bold text-gray-900">
+          <h2
+            id="products-title"
+            class="mb-10 text-center text-3xl font-bold text-gray-900"
+          >
             Популярні товари
           </h2>
           <div
@@ -137,7 +184,7 @@
               >
                 <img
                   src="images/product-1.svg"
-                  alt="Смартфон Galaxy S24"
+                  alt="Смартфон Galaxy S24 сірого кольору"
                   class="h-48 object-contain"
                   width="480"
                   height="360"
@@ -178,7 +225,7 @@
               >
                 <img
                   src="images/product-2.svg"
-                  alt="Ноутбук Pro 16"
+                  alt="Ноутбук Pro 16 у сріблястому корпусі"
                   class="h-48 object-contain"
                   width="480"
                   height="360"
@@ -214,7 +261,7 @@
               >
                 <img
                   src="images/product-3.svg"
-                  alt="Бездротові навушники"
+                  alt="Бездротові навушники з активним шумозаглушенням"
                   class="h-48 object-contain"
                   width="480"
                   height="360"
@@ -250,9 +297,15 @@
         </div>
       </section>
 
-      <section id="about" class="border-t border-gray-200 bg-white py-16">
+      <section
+        id="about"
+        class="border-t border-gray-200 bg-white py-16"
+        aria-labelledby="about-title"
+      >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="mb-4 text-3xl font-bold text-gray-900">Про нас</h2>
+          <h2 id="about-title" class="mb-4 text-3xl font-bold text-gray-900">
+            Про нас
+          </h2>
           <p class="max-w-3xl text-lg text-gray-600">
             OnlineShop — навчальний магазин цифрової техніки. Ми допомагаємо
             обирати пристрої для роботи, навчання та відпочинку.
@@ -260,9 +313,15 @@
         </div>
       </section>
 
-      <section id="contact" class="border-t border-gray-200 py-16">
+      <section
+        id="contact"
+        class="border-t border-gray-200 py-16"
+        aria-labelledby="contact-title"
+      >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="mb-4 text-3xl font-bold text-gray-900">Контакти</h2>
+          <h2 id="contact-title" class="mb-4 text-3xl font-bold text-gray-900">
+            Контакти
+          </h2>
           <p class="text-gray-600">
             Зв'яжіться з нами:
             <a

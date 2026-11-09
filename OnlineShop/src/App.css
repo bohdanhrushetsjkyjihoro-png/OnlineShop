@@ -1,13 +1,14 @@
 :root {
-  --color-primary: #1f4e79;
-  --color-primary-hover: #163857;
+  --color-primary: #184269;
+  --color-primary-hover: #102e4a;
   --color-secondary: #f3f4f6;
-  --color-text-main: #1f2937;
-  --color-text-muted: #6b7280;
+  --color-text-main: #111827;
+  --color-text-muted: #4b5563;
   --color-bg-light: #ffffff;
   --color-bg-alt: #f9fafb;
-  --color-border: #e5e7eb;
-  --color-sale: #ef4444;
+  --color-border: #d1d5db;
+  --color-sale: #b42318;
+  --color-focus: #2563eb;
 
   --space-3: 12px;
   --space-4: 16px;
@@ -36,16 +37,25 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
 .app {
-  --color-primary: #1f4e79;
-  --color-primary-hover: #163857;
+  --color-primary: #184269;
+  --color-primary-hover: #102e4a;
   --color-secondary: #f3f4f6;
-  --color-text-main: #1f2937;
-  --color-text-muted: #6b7280;
+  --color-text-main: #111827;
+  --color-text-muted: #4b5563;
   --color-bg-light: #ffffff;
   --color-bg-alt: #f9fafb;
-  --color-border: #e5e7eb;
-  --color-sale: #ef4444;
+  --color-border: #d1d5db;
+  --color-sale: #b42318;
+  --color-focus: #2563eb;
 
   display: flex;
   min-height: 100vh;
@@ -67,6 +77,7 @@ body {
   --color-bg-alt: #202d3b;
   --color-border: #394858;
   --color-sale: #ff8291;
+  --color-focus: #60a5fa;
 }
 
 .app.dark .btn--primary,
@@ -79,6 +90,11 @@ body {
 
 .app.dark .btn--primary:hover {
   background-color: #264e73;
+}
+
+.app.dark .card__tag--sale {
+  color: #ffffff;
+  background-color: #b42318;
 }
 
 .app main {
@@ -224,7 +240,7 @@ body {
 }
 
 .input-field:focus-visible {
-  outline: 3px solid rgba(31, 78, 121, 0.2);
+  outline: 3px solid var(--color-focus);
   border-color: var(--color-primary);
 }
 
