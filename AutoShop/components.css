@@ -1,0 +1,91 @@
+.button {
+  display: inline-flex;
+  min-height: 2.9rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.2rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.button--primary {
+  color: var(--button-text);
+  background-color: var(--button-bg);
+}
+
+.button--primary:hover {
+  color: var(--button-text);
+  background-color: var(--button-hover-bg);
+}
+
+.button--secondary {
+  color: var(--text-color);
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+}
+
+.button--secondary:hover {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-color: var(--primary-color);
+}
+
+.button--ghost {
+  color: var(--link-color);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.button--ghost:hover {
+  color: var(--link-hover-color);
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+.card {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.4rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--primary-color);
+}
+
+.card p {
+  margin: 0;
+}
+
+.card a {
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.card-number {
+  margin: 0 0 0.45rem;
+  color: var(--link-color);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.service-cards .card {
+  min-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
