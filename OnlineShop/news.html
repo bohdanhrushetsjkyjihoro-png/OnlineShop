@@ -78,6 +78,22 @@
           </div>
 
           <div class="form__group">
+            <label for="phone" class="form__label">Телефон</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form__input"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              aria-describedby="phone-hint"
+              placeholder="+380XXXXXXXXX"
+            />
+            <span id="phone-hint" class="form__hint" aria-live="polite"></span>
+          </div>
+
+          <div class="form__group">
             <label for="message" class="form__label">Повідомлення</label>
             <textarea
               id="message"

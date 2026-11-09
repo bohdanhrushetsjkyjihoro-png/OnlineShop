@@ -620,6 +620,15 @@ button:focus-visible {
   margin-bottom: 16px;
 }
 
+.form__hint {
+  color: #b42318;
+  font-size: 0.85rem;
+}
+
+.form__input[aria-invalid="true"] {
+  border-color: #b42318;
+}
+
 .form__label {
   font-size: 1rem;
   font-weight: 700;
