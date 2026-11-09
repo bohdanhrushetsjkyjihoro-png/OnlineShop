@@ -1,0 +1,125 @@
+/* AutoShop design system tokens: colors, typography, and effects */
+:root {
+  --color-primary: #e4572e;
+  --color-primary-hover: #b8401c;
+
+  --color-text: #1d2733;
+  --color-text-muted: #6b7280;
+  --color-text-inverse: #ffffff;
+  --color-text-inverse-muted: #c9ced4;
+
+  --color-bg: #f2f3f1;
+  --color-surface: #ffffff;
+  --color-inverse: #1d2733;
+  --color-inverse-deep: #0b0f14;
+
+  --color-border: #c9ced4;
+  --color-link: #b8401c;
+  --color-link-hover: #1d2733;
+
+  --color-button-bg: #b8401c;
+  --color-button-text: #ffffff;
+  --color-button-hover: #1d2733;
+
+  color-scheme: light;
+}
+
+.dark-theme {
+  --color-primary: #ff8a65;
+  --color-primary-hover: #ffb199;
+
+  --color-text: #e6e9ec;
+  --color-text-muted: #9aa5b1;
+  --color-text-inverse: #e6e9ec;
+  --color-text-inverse-muted: #9aa5b1;
+
+  --color-bg: #12171d;
+  --color-surface: #1d2630;
+  --color-inverse: #0b0f14;
+  --color-inverse-deep: #070a0d;
+
+  --color-border: #3a4756;
+  --color-link: #ff8a65;
+  --color-link-hover: #ffffff;
+
+  --color-button-bg: #ff8a65;
+  --color-button-text: #12171d;
+  --color-button-hover: #ffb199;
+
+  color-scheme: dark;
+}
+
+/* Preserve existing component styles while exposing the Figma token names. */
+:root,
+.dark-theme {
+  --primary-color: var(--color-primary);
+  --text-color: var(--color-text);
+  --bg-color: var(--color-bg);
+  --surface-color: var(--color-surface);
+  --border-color: var(--color-border);
+  --link-color: var(--color-link);
+  --link-hover-color: var(--color-link-hover);
+  --button-bg: var(--color-button-bg);
+  --button-text: var(--color-button-text);
+  --button-hover-bg: var(--color-button-hover);
+  --inverse-bg: var(--color-inverse);
+  --inverse-text: var(--color-text-inverse);
+  --inverse-muted: var(--color-text-inverse-muted);
+}
+
+.text-h1,
+h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  color: var(--color-text);
+}
+
+.text-h2,
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  color: var(--color-text);
+}
+
+.text-h3,
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+.text-body,
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.text-caption,
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-link);
+}
+
+.text-button {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.effect-card-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.dark-theme .effect-card-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
