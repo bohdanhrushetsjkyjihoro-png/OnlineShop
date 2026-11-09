@@ -8,7 +8,14 @@
       content="OnlineShop — магазин цифрової техніки з гарантією якості та швидкою доставкою."
     />
     <title>OnlineShop — магазин цифрової техніки</title>
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero-banner.svg"
+      type="image/svg+xml"
+    />
     <link href="./dist/output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
   <body class="bg-gray-50 font-sans text-gray-800 antialiased">
     <header class="sticky top-0 z-50 border-b border-gray-200 bg-white">
@@ -107,6 +114,7 @@
               class="h-auto max-w-full rounded-2xl shadow-xl"
               width="720"
               height="560"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -133,6 +141,7 @@
                   class="h-48 object-contain"
                   width="480"
                   height="360"
+                  loading="lazy"
                 />
                 <span
                   class="absolute left-3 top-3 rounded-md bg-brand-primary px-2.5 py-1 text-xs font-bold text-white"
@@ -173,6 +182,7 @@
                   class="h-48 object-contain"
                   width="480"
                   height="360"
+                  loading="lazy"
                 />
               </div>
               <div class="flex flex-1 flex-col p-6">
@@ -208,6 +218,7 @@
                   class="h-48 object-contain"
                   width="480"
                   height="360"
+                  loading="lazy"
                 />
                 <span
                   class="absolute left-3 top-3 rounded-md bg-brand-sale px-2.5 py-1 text-xs font-bold text-white"
@@ -288,6 +299,5 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

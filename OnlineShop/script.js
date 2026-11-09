@@ -25,6 +25,7 @@ function createProjectCard(project) {
   image.width = 480;
   image.height = 360;
   image.className = "h-48 object-contain";
+  image.loading = "lazy";
   imageContainer.append(image);
 
   if (project.tag) {

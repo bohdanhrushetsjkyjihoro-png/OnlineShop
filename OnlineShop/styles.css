@@ -23,13 +23,14 @@ body {
   margin: 0;
   color: var(--color-text);
   background: var(--color-bg);
-  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -238,6 +239,8 @@ button:focus-visible {
 
 .hero__image {
   width: 100%;
+  aspect-ratio: 9 / 7;
+  object-fit: contain;
   filter: drop-shadow(0 1.5rem 2rem rgba(51, 57, 112, 0.15));
 }
 
