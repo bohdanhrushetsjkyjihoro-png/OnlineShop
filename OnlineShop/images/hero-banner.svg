@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="87" y1="34" x2="625" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9E8FF"/>
+      <stop offset="1" stop-color="#D6E5FF"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="309" y1="116" x2="475" y2="421" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#333B62"/>
+      <stop offset="1" stop-color="#151A31"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="340" y1="157" x2="449" y2="371" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7771F4"/>
+      <stop offset="1" stop-color="#B0D5FF"/>
+    </linearGradient>
+    <filter id="shadow" x="146" y="52" width="459" height="472" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+  <rect x="36" y="26" width="648" height="508" rx="42" fill="url(#bg)"/>
+  <circle cx="559" cy="114" r="52" fill="#fff" fill-opacity=".52"/>
+  <circle cx="140" cy="422" r="32" fill="#fff" fill-opacity=".6"/>
+  <ellipse cx="376" cy="430" rx="195" ry="34" fill="#39436B" fill-opacity=".2" filter="url(#shadow)"/>
+  <rect x="194" y="174" width="166" height="235" rx="20" transform="rotate(-10 194 174)" fill="#fff" stroke="#fff" stroke-width="8"/>
+  <rect x="211" y="190" width="132" height="195" rx="12" transform="rotate(-10 211 190)" fill="#9BB8F9"/>
+  <circle cx="277" cy="215" r="31" fill="#EEEFFF" fill-opacity=".85"/>
+  <path d="M225 348c32-55 67-52 101-10l11 18-99 18-13-26Z" fill="#7169EA"/>
+  <rect x="326" y="84" width="193" height="339" rx="32" fill="url(#phone)" stroke="#fff" stroke-width="8"/>
+  <rect x="343" y="110" width="159" height="287" rx="20" fill="url(#screen)"/>
+  <rect x="392" y="98" width="59" height="8" rx="4" fill="#101426"/>
+  <circle cx="422" cy="374" r="9" fill="#fff" fill-opacity=".8"/>
+  <circle cx="381" cy="166" r="25" fill="#fff" fill-opacity=".7"/>
+  <path d="M356 310c26-47 65-65 121-12v72H356v-60Z" fill="#fff" fill-opacity=".56"/>
+  <rect x="466" y="249" width="106" height="139" rx="24" transform="rotate(12 466 249)" fill="#fff" stroke="#fff" stroke-width="7"/>
+  <rect x="477" y="263" width="84" height="111" rx="17" transform="rotate(12 477 263)" fill="#343C60"/>
+  <path d="M485 308a35 35 0 0 1 69 14" stroke="#9DABFF" stroke-width="9" stroke-linecap="round"/>
+  <path d="M492 340a24 24 0 0 0 46 8" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnlineShop — магазин цифрової техніки з гарантією якості та швидкою доставкою."
+    />
+    <title>OnlineShop — магазин цифрової техніки</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#hero" class="header__logo">OnlineShop</a>
+        <nav class="header__nav" aria-label="Головна навігація">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero" class="nav__link nav__link--active">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a class="btn btn--secondary" href="#contact">Увійти</a>
+          <a class="btn btn--primary" href="#products">Кошик</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <p class="eyebrow">Технології для кожного дня</p>
+            <h1 class="hero__title">Сучасна техніка для вашого комфорту</h1>
+            <p class="hero__subtitle">
+              Оновлюйте свій гаджетний парк за вигідними цінами з гарантією
+              якості та швидкою доставкою.
+            </p>
+            <div class="hero__buttons">
+              <a href="#products" class="btn btn--primary btn--large">
+                Переглянути каталог
+              </a>
+              <a href="#about" class="btn btn--outline btn--large">
+                Дізнатися більше
+              </a>
+            </div>
+          </div>
+          <div class="hero__image-wrapper">
+            <img
+              src="images/hero-banner.svg"
+              alt="Смартфон, планшет і навушники OnlineShop"
+              class="hero__image"
+              width="720"
+              height="560"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products section">
+        <div class="container">
+          <p class="eyebrow">Вибір покупців</p>
+          <h2 class="section-title">Популярні товари</h2>
+          <div class="products__grid">
+            <article class="card">
+              <div class="card__image-container">
+                <img
+                  src="images/product-1.svg"
+                  alt="Смартфон Galaxy S24"
+                  class="card__image"
+                  width="480"
+                  height="360"
+                />
+                <span class="card__tag">Хіт</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Смартфон Galaxy S24</h3>
+                <p class="card__description">
+                  Потужний флагман із сучасними AI-функціями та чудовою камерою.
+                </p>
+                <div class="card__footer">
+                  <span class="card__price">34 999 ₴</span>
+                  <button class="btn btn--primary btn--sm" type="button">
+                    Купити
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image-container">
+                <img
+                  src="images/product-2.svg"
+                  alt="Ноутбук Pro 16"
+                  class="card__image"
+                  width="480"
+                  height="360"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Ноутбук Pro 16"</h3>
+                <p class="card__description">
+                  Ідеальний вибір для розробників, дизайнерів та роботи з відео.
+                </p>
+                <div class="card__footer">
+                  <span class="card__price">62 499 ₴</span>
+                  <button class="btn btn--primary btn--sm" type="button">
+                    Купити
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image-container">
+                <img
+                  src="images/product-3.svg"
+                  alt="Бездротові навушники"
+                  class="card__image"
+                  width="480"
+                  height="360"
+                />
+                <span class="card__tag card__tag--sale">Знижка</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Бездротові навушники</h3>
+                <p class="card__description">
+                  Активне шумозаглушення та до 30 годин автономної роботи.
+                </p>
+                <div class="card__footer">
+                  <span class="card__price">5 899 ₴</span>
+                  <button class="btn btn--primary btn--sm" type="button">
+                    Купити
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container about__container">
+          <p class="eyebrow">Про OnlineShop</p>
+          <h2 class="section-title">Техніка, якій можна довіряти</h2>
+          <p class="about__text">
+            Ми зібрали популярні цифрові пристрої для роботи, навчання й
+            відпочинку. Кожне замовлення супроводжується гарантією та уважним
+            сервісом.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container contact__container">
+          <div>
+            <p class="eyebrow">Ми на зв'язку</p>
+            <h2 class="section-title">Потрібна допомога з вибором?</h2>
+            <p>Напишіть нам, і команда допоможе підібрати потрібний пристрій.</p>
+            <a href="mailto:hello@onlineshop.example" class="contact__email">
+              hello@onlineshop.example
+            </a>
+          </div>
+          <a class="btn btn--outline btn--large" href="mailto:hello@onlineshop.example">
+            Написати нам
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copy">
+          &copy; 2026 OnlineShop. Усі права захищені.
+        </p>
+        <div class="footer__links">
+          <a href="#contact" class="footer__link">Політика конфіденційності</a>
+          <a href="#contact" class="footer__link">Умови використання</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
