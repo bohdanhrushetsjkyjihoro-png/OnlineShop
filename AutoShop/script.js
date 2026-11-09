@@ -12,6 +12,10 @@ const footerCopy = document.querySelector(".site-footer p");
 const cards = document.querySelectorAll(".card");
 const navLinks = document.querySelectorAll(".site-header nav a");
 const themeToggle = document.querySelector("#theme-toggle");
+const contactForm = document.querySelector("#contact-form");
+const emailInput = document.querySelector("#email");
+const emailHint = document.querySelector("#email-hint");
+const formMessage = document.querySelector("#form-message");
 
 console.log("Кількість карток:", cards.length);
 
@@ -39,5 +43,63 @@ themeToggle.addEventListener("click", () => {
     "aria-label",
     isDark ? "Увімкнути світлу тему" : "Увімкнути темну тему",
   );
-  themeToggle.textContent = isDark ? "Світла тема" : "Темна тема";
+});
+
+emailInput.addEventListener("input", () => {
+  const email = emailInput.value.trim();
+  if (!email || emailInput.validity.valid) {
+    emailHint.textContent = "";
+    emailInput.removeAttribute("aria-invalid");
+    return;
+  }
+
+  emailHint.textContent = "Email має містити символ @.";
+  emailInput.setAttribute("aria-invalid", "true");
+});
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const nameInput = document.querySelector("#name");
+  const messageInput = document.querySelector("#message");
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
+  const invalidFields = [];
+
+  [nameInput, emailInput, messageInput].forEach((input) => {
+    input.removeAttribute("aria-invalid");
+  });
+  emailHint.textContent = "";
+  formMessage.classList.remove("is-error", "is-success");
+
+  if (!name) {
+    nameInput.setAttribute("aria-invalid", "true");
+    invalidFields.push(nameInput);
+  }
+
+  if (!email || !emailInput.validity.valid) {
+    emailInput.setAttribute("aria-invalid", "true");
+    emailHint.textContent = "Email має містити символ @.";
+    invalidFields.push(emailInput);
+  }
+
+  if (!message) {
+    messageInput.setAttribute("aria-invalid", "true");
+    invalidFields.push(messageInput);
+  }
+
+  if (invalidFields.length > 0) {
+    formMessage.textContent = !email || !emailInput.validity.valid
+      ? "Помилка: введіть коректний email (має містити @)."
+      : "Будь ласка, заповніть усі поля форми.";
+    formMessage.classList.add("is-error");
+    invalidFields[0].focus();
+    return;
+  }
+
+  formMessage.textContent = `Дякуємо, ${name || "користувачу"}! Це демонстраційна форма — надсилання повідомлень ще не налаштоване.`;
+  formMessage.classList.add("is-success");
+  contactForm.reset();
+  emailHint.textContent = "";
 });
