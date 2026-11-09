@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header({ theme, onToggleTheme }) {
   return (
     <header className="header">
       <div className="container header__container">
@@ -27,6 +27,15 @@ export default function Header() {
           </ul>
         </nav>
         <div className="header__actions">
+          <button
+            type="button"
+            className="btn btn--secondary"
+            onClick={onToggleTheme}
+            aria-label={`Увімкнути ${theme === "light" ? "темну" : "світлу"} тему`}
+            aria-pressed={theme === "dark"}
+          >
+            {theme === "light" ? "Темна тема" : "Світла тема"}
+          </button>
           <button type="button" className="btn btn--secondary">
             Увійти
           </button>
