@@ -102,6 +102,10 @@
             <h3>Консультація</h3>
             <p>Допоможемо зорієнтуватися в категоріях та обрати товар.</p>
           </article>
+          <article class="card effect-card-shadow">
+            <h3>Підбір запчастин</h3>
+            <p>Допоможемо визначити потрібні запчастини для вашого авто.</p>
+          </article>
         </div>
       </section>
 
@@ -163,18 +167,6 @@
       <a href="mailto:autoshop@example.com">autoshop@example.com</a>
     </footer>
 
-    <script>
-      const themeToggle = document.querySelector("#theme-toggle");
-
-      themeToggle.addEventListener("click", () => {
-        const isDark = document.body.classList.toggle("dark-theme");
-        themeToggle.setAttribute("aria-pressed", String(isDark));
-        themeToggle.setAttribute(
-          "aria-label",
-          isDark ? "Увімкнути світлу тему" : "Увімкнути темну тему",
-        );
-        themeToggle.textContent = isDark ? "Світла тема" : "Темна тема";
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

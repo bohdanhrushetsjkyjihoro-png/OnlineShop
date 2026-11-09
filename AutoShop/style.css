@@ -133,6 +133,14 @@ h3 {
   color: var(--inverse-text);
 }
 
+.site-header nav a.is-active {
+  color: var(--inverse-text);
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4rem;
+}
+
 #theme-toggle {
   padding: 0.4rem 0.75rem;
   color: var(--inverse-text);
