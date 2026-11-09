@@ -39,9 +39,9 @@
         </div>
       </section>
 
-      <section id="contact" class="api-section">
+      <section id="contact" class="api-section contact-section">
         <p class="eyebrow">Ми на зв'язку</p>
-        <h2 class="section-title">Зв'язатися з нами</h2>
+        <h2 class="section-title">Зворотний зв'язок</h2>
         <form id="contact-form" class="api-form" novalidate>
           <div
             id="form-status"
@@ -52,7 +52,7 @@
           ></div>
 
           <div class="form__group">
-            <label for="name" class="form__label">Ім'я</label>
+            <label for="name" class="form__label">Ваше ім'я:</label>
             <input
               type="text"
               id="name"
@@ -60,12 +60,12 @@
               class="form__input"
               autocomplete="name"
               required
-              placeholder="Ваше ім'я"
+              placeholder="Олександр"
             />
           </div>
 
           <div class="form__group">
-            <label for="email" class="form__label">Email</label>
+            <label for="email" class="form__label">Ваш Email:</label>
             <input
               type="email"
               id="email"
@@ -73,19 +73,35 @@
               class="form__input"
               autocomplete="email"
               required
-              placeholder="name@example.com"
+              placeholder="alex@example.com"
             />
           </div>
 
           <div class="form__group">
-            <label for="message" class="form__label">Повідомлення</label>
+            <label for="phone" class="form__label">Телефон</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form__input"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              aria-describedby="phone-hint"
+              placeholder="+380XXXXXXXXX"
+            />
+            <span id="phone-hint" class="form__hint" aria-live="polite"></span>
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Повідомлення:</label>
             <textarea
               id="message"
               name="message"
               class="form__textarea"
               rows="4"
               required
-              placeholder="Текст вашого повідомлення"
+              placeholder="Ваше повідомлення..."
             ></textarea>
           </div>
 

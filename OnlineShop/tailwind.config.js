@@ -5,12 +5,12 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          primary: "#1f4e79",
-          hover: "#163857",
+          primary: "#184269",
+          hover: "#102e4a",
           secondary: "#f3f4f6",
-          dark: "#1f2937",
-          muted: "#6b7280",
-          sale: "#ef4444",
+          dark: "#111827",
+          muted: "#4b5563",
+          sale: "#b42318",
         },
       },
       height: {
