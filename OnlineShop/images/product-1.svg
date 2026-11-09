@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="55" y1="18" x2="420" y2="344" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F1FF"/>
+      <stop offset="1" stop-color="#DCE8FF"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="181" y1="36" x2="315" y2="331" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#414968"/>
+      <stop offset="1" stop-color="#121827"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#bg)"/>
+  <circle cx="385" cy="75" r="48" fill="#fff" fill-opacity=".58"/>
+  <circle cx="94" cy="289" r="65" fill="#fff" fill-opacity=".4"/>
+  <ellipse cx="244" cy="315" rx="93" ry="15" fill="#353D65" fill-opacity=".18"/>
+  <rect x="172" y="30" width="136" height="282" rx="28" fill="url(#phone)" stroke="#fff" stroke-width="7"/>
+  <rect x="183" y="46" width="114" height="246" rx="20" fill="#8580F6"/>
+  <circle cx="240" cy="99" r="33" fill="#fff" fill-opacity=".65"/>
+  <path d="M188 231c26-45 63-60 109-15v66H188v-51Z" fill="#D6E5FF"/>
+  <path d="M188 259c27-35 60-29 109 1v32H188v-33Z" fill="#5157C7"/>
+  <rect x="218" y="39" width="44" height="6" rx="3" fill="#151A29"/>
+</svg>

@@ -270,13 +270,50 @@ main > section {
   font-weight: 700;
 }
 
+.contact-section .form-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field-hint {
+  min-height: 1.25em;
+  color: #dc2626;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+#form-message {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+#form-message.is-error {
+  color: #dc2626;
+}
+
+#form-message.is-success {
+  color: #16a34a;
+}
+
+.dark-theme #form-message.is-error {
+  color: #ff8a80;
+}
+
+.dark-theme #form-message.is-success {
+  color: #7ee2a8;
+}
+
+.dark-theme .field-hint {
+  color: #ff8a80;
+}
+
 input,
 textarea {
   width: 100%;
   padding: 0.7rem 0.8rem;
   color: var(--text-color);
   font: inherit;
-  background-color: var(--bg-color);
+  background-color: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
